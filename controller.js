@@ -33,6 +33,7 @@ controller.getDataAPI = function(url){
 	})
 	.then((data)=>{
 		console.log(data);
+		return data;
 	})
 };
 controller.setLocation = function () { 
