@@ -1,0 +1,211 @@
+header.header{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+    z-index: 1000;
+}
+
+.container{
+    height:80px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    margin-top:0px;
+    width: 80px;
+    height: 80px;
+}
+
+
+.page-menu ul{
+  display: flex;
+}
+
+.page-menu ul li{
+    margin-right: 10px;
+}
+
+.page-menu ul li:last-child{
+    margin-right: 0;
+}
+
+.page-menu ul li a{
+    position: relative;
+    padding: 0 20px;
+    height: 40px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.page-menu ul li a::after{
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -150%;
+    top: 0;
+    transition: .5s all ease-in-out;
+    background: linear-gradient(0.25turn,#ebf8e1 ,#3f87a6,#ebf8e1);
+    transform: skewX(30deg);
+    transform-origin: bottom left;
+}
+
+.page-menu ul li a:hover::after{
+    left: 0;
+    width: 150%;
+}
+@media only screen and (max-width:1200px){
+    .container{
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (max-width:768px){
+    .hm-menu{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .hm-menu span{
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        border-radius: 1px;
+        transition: .3s all ease-in-out;
+    }
+    
+    .left{
+        margin-bottom: 15px;
+    }
+    
+    .hm-menu span:nth-child(1){
+        width: 40%;
+        top: 8px;
+    }
+    
+    .hm-menu span:nth-child(2){
+        width: 60%;
+        top: calc(50% - 1px);
+    }
+    
+    .hm-menu span:nth-child(3){
+        width: 50%;
+        top: calc(100% - 10px);
+    }
+    
+    .container{
+    flex-direction: column;
+    }
+    
+    .page-menu ul{
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .page-menu ul li{
+        margin: 0;
+    }
+    
+    .page-menu ul li a{
+        font-size: 22px;
+        height: 60px;
+        line-height: 60px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        overflow: visible;
+    }
+    
+    .page-menu ul li a::before{
+        content: '';
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+        font-weight: 600;
+        color: rgb(39, 18, 230);
+        z-index: -1;
+        transition: .3s all ease-in-out;
+    }
+    
+    .page-menu ul li:hover:nth-child(1) a::before{
+        content: 'INTRODUCTION';
+        font-size: 40px;
+    }
+    
+    .page-menu ul li:hover:nth-child(2) a::before{
+        content: 'MODEL';
+        font-size: 40px;
+    }
+    
+    .page-menu ul li:hover:nth-child(3) a::before{
+        content: 'BRAND';
+        font-size: 40px;
+    }
+    
+    .page-menu ul li:hover:nth-child(4) a::before{
+        content: 'HISTORY';
+        font-size: 40px;
+    }
+    
+    .page-menu ul li:hover:nth-child(5) a::before{
+        content: 'NEWS';
+        font-size: 40px;
+    }
+    .page-menu ul li:hover:nth-child(6) a::before{
+        content: 'ALBUM';
+        font-size: 40px;
+    }
+    .page-menu ul li:hover:nth-child(7) a::before{
+        content: 'CONTACT';
+        font-size: 40px;
+    }
+    .page-menu ul li a:hover{
+        color: transparent;
+    }
+    
+    .page-menu ul li a::after{
+        display: none;
+    }
+    
+    header.header.active{
+        height: 100%;
+        background: linear-gradient(0.25turn,#ebf8e1 ,#3f87a6,#ebf8e1);
+    }
+    
+    .hm-menu span.active{
+        width: 100%!important;
+    }
+    
+    .activex{
+        transition-delay: .5s;
+    }
+}
