@@ -30,11 +30,11 @@ controller.getDataAPI = function(url){
 	fetch(url)
 	.then((re)=>{
 		return re.json();
-	})
+	});
 };
 controller.getDataAPI('./imageLamborghini.json').then((data)=>{
 	console.log(data);
-})
+});
 controller.setLocation = function () { 
 	$(window).on('hashchange',function(){
 		const hash = window.location.hash.substr(1);
