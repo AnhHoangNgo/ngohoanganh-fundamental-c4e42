@@ -32,14 +32,12 @@ controller.getDataAPI = function(url){
 		return re.json();
 	})
 	.then((data)=>{
-		data.forEach(element => {
-			console.log(element)
-		});
+		return data;
 	})
 };
 controller.setLocation = function () { 
 	$(window).on('hashchange',function(){
-		const hash = window.location.hash.substr(0);
+		const hash = window.location.hash.substr(1);
 		console.log($(this));
 		view.setActiveScreen(hash);
 	})
