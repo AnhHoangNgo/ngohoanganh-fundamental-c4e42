@@ -39,7 +39,7 @@ controller.getDataAPI = function(url){
 };
 controller.setLocation = function () { 
 	$(window).on('hashchange',function(){
-		const hash = window.location.hash.substr(1);
+		const hash = window.location.hash.substr(0);
 		console.log($(this));
 		view.setActiveScreen(hash);
 	})
