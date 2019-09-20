@@ -31,9 +31,6 @@ controller.getDataAPI = function(url){
 	.then((re)=>{
 		return re.json();
 	})
-	.then((data)=>{
-		return data;
-	})
 };
 controller.setLocation = function () { 
 	$(window).on('hashchange',function(){
