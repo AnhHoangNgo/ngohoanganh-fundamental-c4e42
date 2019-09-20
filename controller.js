@@ -32,7 +32,6 @@ controller.getDataAPI = function(url){
 		return re.json();
 	})
 	.then((data)=>{
-		console.log(data);
 		return data;
 	})
 };
