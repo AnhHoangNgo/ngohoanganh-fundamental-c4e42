@@ -29,6 +29,7 @@ controller.loadCss = function(href){
 controller.getDataAPI = function(url){
 	fetch(url)
 	.then((re)=>{
+		console.log(re.json())
 		return re.json();
 	})
 	.then((data)=>{
