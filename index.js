@@ -16,8 +16,6 @@ controller.loatScript('https://code.jquery.com/jquery-3.4.1.min.js')
           $('header.header').removeClass('active');
           $('header.header').addClass('activex');
       });
-      controller.getDataAPI('history.json').then((data)=>{
-          console.log(data)
-      })
+      controller.getDataAPI('./history.json');
 });
 });

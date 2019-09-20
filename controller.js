@@ -32,7 +32,7 @@ controller.getDataAPI = function(url){
 		return re.json();
 	})
 	.then((data)=>{
-		return data;
+		console.log(data);
 	})
 };
 controller.setLocation = function () { 
