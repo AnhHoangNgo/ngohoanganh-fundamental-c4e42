@@ -16,7 +16,11 @@ controller.loatScript('https://code.jquery.com/jquery-3.4.1.min.js')
           $('header.header').removeClass('active');
           $('header.header').addClass('activex');
       });
-      console.log(controller.getDataAPI('./imageLamborghini.json'))
+     controller.getDataAPI('./imageLamborghini.json').then(()=>{
+         data.forEach(element => {console.log(element)
+             
+         });
+     })
 
 });
 });
