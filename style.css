@@ -351,9 +351,13 @@ header.headerPage h1.title {
   justify-content: space-between;
 }
 .newsContainer .new{
-  width:40%;
+  width:45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:start;
+}
+@media (max-width: 700px) {
+  .newsContainer .new{
+    width:100%}
 }
