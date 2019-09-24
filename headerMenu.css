@@ -9,7 +9,7 @@ header.header{
     z-index: 1000;
 }
 
-.container{
+header.header .container{
     height:80px;
     width: 1170px;
     margin: 0 auto;
@@ -78,7 +78,7 @@ header.header{
     width: 150%;
 }
 @media only screen and (max-width:1200px){
-    .container{
+    header.header .container{
         margin: 0 15px;
         width: calc(100% - 30px);
     }
@@ -121,7 +121,7 @@ header.header{
         top: calc(100% - 10px);
     }
     
-    .container{
+    header.header .container{
     flex-direction: column;
     }
     
