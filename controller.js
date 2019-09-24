@@ -26,11 +26,26 @@ controller.loadCss = function(href){
 		}
 	})
 };
-controller.setLocation = function () { 
-	$(window).on('hashchange',function(){
-		const hash = window.location.hash.substr(1);
-		console.log($(this));
-		view.setActiveScreen(hash);
-	})
- };
+controller.loadAPI = function(url){
+	fetch(url).then(
+		(res)=>{
+			return res.json();
+		}
+	)
+}
+
+ controller.setPage = function (){
+	 const queryObjects={};
+	 const queryStringPage = location.search;
+	 const query = queryStringPage.replace('?','').split('&')
+	 console.log(query);
+	 query.forEach((element)=>{
+		 console.log(element);
+		const x =  element.split('=');
+			 queryObjects[x[0]]= x[1]
+	 })
+	 return queryObjects;
+	};
+	
+
  

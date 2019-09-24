@@ -3,9 +3,9 @@ controller.loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/cs
 controller.loatScript('https://code.jquery.com/jquery-3.4.1.min.js')
 .then(()=>{
     $(document).ready(function () {
+        document.querySelector('.header').innerHTML = components.header;
         view.setActiveScreen('home');
-        controller.setLocation();
-        console.log(location)
+        view.setActiveScreen(controller.setPage().page);
     $('.hm-menu').click(function(){
         $('.hm-menu span').toggleClass('active');
         $('header.header').toggleClass('active');

@@ -1,6 +1,6 @@
 header.header{
     position: fixed;
-    top: 20px;
+    padding-top:10px;
     left: 0;
     height: 80px;
     width: 100%;
@@ -24,8 +24,8 @@ header.header{
 }
 .logo img{
     margin-top:0px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -48,7 +48,7 @@ header.header{
     display: block;
     box-sizing: border-box;
     line-height: 40px;
-    color: #fff;
+    color: rgb(18, 121, 9);
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -56,6 +56,7 @@ header.header{
     transition: .3s all ease-in-out;
     overflow: hidden;
     text-transform: uppercase;
+    font-weight:bold;
 }
 
 .page-menu ul li a::after{
@@ -67,7 +68,7 @@ header.header{
     left: -150%;
     top: 0;
     transition: .5s all ease-in-out;
-    background: linear-gradient(0.25turn,#ebf8e1 ,#3f87a6,#ebf8e1);
+    background: linear-gradient(0.25turn,#ebf8e1 ,#282a2b,#ebf8e1);
     transform: skewX(30deg);
     transform-origin: bottom left;
 }
@@ -198,7 +199,7 @@ header.header{
     
     header.header.active{
         height: 100%;
-        background: linear-gradient(0.25turn,#ebf8e1 ,#3f87a6,#ebf8e1);
+        background: linear-gradient(0.25turn,#ebf8e1 ,#282a2b,#ebf8e1);
     }
     
     .hm-menu span.active{
