@@ -106,7 +106,6 @@ components.history=`
 components.new=`
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">News</a></div>
-<div>
 <h1 style="font-size:80px">NEWS <br> LAMBORGHINI</h1>
 <div class="newsContainer">
   <div class="new">

@@ -344,3 +344,8 @@ header.headerPage h1.title {
 .mainPage .pageNow{
   margin-top:100px;
 }
+.newsContainer{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
