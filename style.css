@@ -348,12 +348,12 @@ header.headerPage h1.title {
   width:100%;
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .newsContainer .new{
-  width:50%;
+  width:40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:start;
 }
