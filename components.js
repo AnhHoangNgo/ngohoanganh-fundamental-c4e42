@@ -104,7 +104,7 @@ components.history=`
         </section>
 `;
 components.new=`
-<a href="&title=Lam-bo-ghi-ni"></a>
+<a id="newPageTitile" style ="color:black" href="&title=Lam-bo-ghi-ni">Hello</a>
 `
 components.album=`
 <header class="headerPage">
