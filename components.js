@@ -128,8 +128,11 @@ components.album=`
 <a href="#page-2"><span></span></a>
 </header>
 <main class="mainPage">
-<h1 style = "color:black">Masonry Gallery</h1>
+<div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">Album</a></div>
+<div><h1>Masonry Gallery</h1>
 <div class="gallery" id="gallery">
+
+</div>
 </div></main>
 `
 components.contact=`
