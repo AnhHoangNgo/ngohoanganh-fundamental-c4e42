@@ -349,3 +349,10 @@ header.headerPage h1.title {
   display:flex;
   justify-content: center;
 }
+.newsContainer .new{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
