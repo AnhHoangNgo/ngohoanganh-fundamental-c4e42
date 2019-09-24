@@ -85,17 +85,11 @@ components.model=`
      </main>
 `;
 components.brand=`
-<section id="page-1" class="page header">
-          <h1>Brand</h1>
-          <a href="#page-2"><span></span></a>
-        </section>
-        <section id="page-2" class="page">
-        </section>
-        <section id="page-3" class="page">
-        </section>
-        <section id="page-4" class="page">
-        </section>
-
+<header class="headerPage">
+<h1 class="title">LAMBORGHINI  </br> BRAND</h1>
+<div class="slideShow slideShow1"><img class="imageShow" src="lamborghini-aventador-blue-1.jpg" alt=""></div>
+<a href="#page-2"><span></span></a>
+</header>
 `;
 components.history=`
 <section id="homepage-1" class="page header">
