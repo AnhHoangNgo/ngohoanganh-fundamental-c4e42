@@ -104,7 +104,34 @@ components.history=`
         </section>
 `;
 components.new=`
-<a id="newPageTitile" style ="color:black" href="&title=Lam-bo-ghi-ni">Hello</a>
+<main class="mainPage">
+<div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">News</a></div>
+<div>
+<h1 style="font-size:80px">NEWS <br> LAMBORGHINI</h1>
+<div class="newsContainer">
+  <div class="new">
+ <a href="?titleNew=LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR"> <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
+  <h4 class="date">19 SEP</h4>
+  <h3 class="title">LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR</h3>
+</div>
+<div class="new">
+    <a href="?titleNew=COLDPLAY’S GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI"> <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
+    <h4 class="date">18 SEP</h4>
+    <h3 class="title">COLDPLAY’S GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI</h3>
+  </div>
+<div class="new">
+      <a href="?titleNew=AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM"></a><img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
+      <h4 class="date">17 SEP</h4>
+      <h3 class="title">AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM</h3>
+    </div>
+<div class="new">
+        <a href="?titleNew=GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA"></a><img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
+        <h4 class="date">16 SEP</h4>
+        <h3 class="title">GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA</h3>
+</div>
+
+</div>
+</div></main>
 `
 components.album=`
 <header class="headerPage">
