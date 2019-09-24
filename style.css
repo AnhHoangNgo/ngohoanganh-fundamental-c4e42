@@ -360,4 +360,7 @@ header.headerPage h1.title {
 @media (max-width: 700px) {
   .newsContainer .new{
     width:100%}
+  .mainPage h1{
+    font-size:40px;
+  }
 }
