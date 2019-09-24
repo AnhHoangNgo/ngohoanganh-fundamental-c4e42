@@ -123,7 +123,8 @@ components.album=`
 </header>
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">Album</a></div>
-<div><h1>Masonry Gallery</h1>
+<div>
+<h1 style="font-size:80px">Masonry Gallery</h1>
 <div class="gallery" id="gallery">
 
 </div>
