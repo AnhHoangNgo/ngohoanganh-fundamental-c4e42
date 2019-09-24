@@ -46,6 +46,12 @@ controller.loadAPI = function(url){
 	 })
 	 return queryObjects;
 	};
+controller.setNewPage = function (){
+	const queryObjects = controller.setPage();
+	const titleNew = queryObjects.title.replace('-',' ');
+	console.log(titleNew);
+	return titleNew;
+}
 	
 
  

@@ -104,16 +104,7 @@ components.history=`
         </section>
 `;
 components.new=`
-<section id="page-1" class="page header">
-          <h1>New</h1>
-          <a href="#page-2"><span></span></a>
-        </section>
-        <section id="page-2" class="page">
-        </section>
-        <section id="page-3" class="page">
-        </section>
-        <section id="page-4" class="page">
-        </section>
+<a href="&title=Lam-bo-ghi-ni"></a>
 `
 components.album=`
 <header class="headerPage">
@@ -142,3 +133,4 @@ components.contact=`
         <section id="page-4" class="page">
         </section>
 `
+components.newPage = 
