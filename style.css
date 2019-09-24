@@ -347,8 +347,13 @@ header.headerPage h1.title {
 .newsContainer{
   width:100%;
   display:flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .newsContainer .new{
-  width:45%;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
