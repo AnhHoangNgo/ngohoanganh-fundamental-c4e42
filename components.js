@@ -133,4 +133,3 @@ components.contact=`
         <section id="page-4" class="page">
         </section>
 `
-components.newPage = 
