@@ -117,7 +117,7 @@ components.new=`
 `
 components.album=`
 <header class="headerPage">
-<h1 style="font-size:40px" class="title">LAMBORGHINI  </br> ALBUM</h1>
+<h1 class="title">LAMBORGHINI  </br> ALBUM</h1>
 <div class="slideShow slideShow1"><img class="imageShow" src="aventador_mk2_render.jpg" alt=""></div>
 <a href="#page-2"><span></span></a>
 </header>
