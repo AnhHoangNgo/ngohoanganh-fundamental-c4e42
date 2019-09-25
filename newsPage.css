@@ -9,7 +9,7 @@
     border:1px solid red;
   }
   .newsContainer .new{
-    width:45%;
+    width:32.333%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,8 +22,11 @@
   }
   @media (max-width: 700px) {
     .newsContainer .new{
-      width:100%}
-    .mainPage h1{
-      font-size:20px;
+      width:46,3333%
+    }
+  }
+  @media (max-width: 500px) {
+    .newsContainer .new{
+      width:100%
     }
   }
