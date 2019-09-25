@@ -20,9 +20,9 @@
   .newsContainer .new .title{
     border: 1px solid red;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .newsContainer .new{
-      width:46,3333%
+      width:46,3333%;
     }
   }
   @media (max-width: 500px) {
