@@ -195,6 +195,7 @@ header.header .container{
     
     .hm-menu span.active{
         width: 100%!important;
+        overflow:visible;
     }
     
     .activex{
