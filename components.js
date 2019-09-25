@@ -114,7 +114,7 @@ components.history=`
 components.news=`
 <main class="mainPage">
 <div class="pageNow" id="newsPage"> <a href="?page=home">Home</a> / <a href="?page=news">News</a></div>
-<h1 style="font-size:80px">NEWS <br> LAMBORGHINI</h1>
+<h1>NEWS <br> LAMBORGHINI</h1>
 <div class="newsContainer">
   <div class="new">
  <a href="?page=news&id=4n"> 
@@ -162,7 +162,7 @@ components.album=`
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">Album</a></div>
 <div>
-<h1 style="font-size:80px">Image garllery</h1>
+<h1>Image garllery</h1>
 <div class="gallery" id="gallery">
 
 </div>
