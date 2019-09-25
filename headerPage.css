@@ -49,7 +49,6 @@ header.headerPage{
     bottom:90px;
     left:50%;
     z-index:99;
-    
   }
   header.headerPage a span {
   position: absolute;
@@ -152,5 +151,13 @@ header.headerPage{
     }
     header.headerPage h1.title{
       font : normal 300 40px/1 'Josefin Sans', sans-serif;
+    }
+  }
+  @media only screen and (max-width:400px){
+    header.headerPage h1.title{
+      font : normal 300 30px/1 'Josefin Sans', sans-serif;
+    }
+    header.headerPage a{
+      display:none;
     }
   }
