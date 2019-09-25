@@ -31,7 +31,7 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.news;
         var queryObjects =  controller.setPage();
         if(queryObjects.page==="news"& queryObjects.id==="1n"){view.setActiveScreen('newPageShow')}
-        controller.loadAPI('./new.json').then((data)=>{
+        fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             console.log(data);
             data.forEach((elem)=>{
                 if(elem.id === queryObjects.id){
