@@ -6,19 +6,37 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border:1px solid red;
   }
   .newsContainer .new{
+    border-radius: 10%;
+    overflow: hidden;
     width:32.333%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:start;
-    background-color: linear-gradient(to right, hsl(100,100,100),rgb(110, 98, 98));
-    border:1px solid red;
+    background-image: linear-gradient(rgb(235, 235, 243), rgb(255, 255, 255), rgb(90, 92, 90));
   }
-  .newsContainer .new .title{
-    border: 1px solid red;
+  .newsContainer .new *{
+    margin:0px;
+  }
+  .newsContainer .new h3.title{
+    text-align: center;
+  }
+  .newsContainer .new .seeNew{
+    height:30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .newsContainer .new .seeNew :nth-child(2){
+    height:0%;
+    text-align: center;
+    color:rgb(99, 99, 8);
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .newsContainer .new .seeNew :nth-child(2):hover{
+    height:100%;
+    background-color: rgb(99, 99, 8);
+    color:white;
   }
   @media (max-width: 800px) {
     .newsContainer .new{

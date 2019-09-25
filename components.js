@@ -119,25 +119,25 @@ components.news=`
   <div class="new">
  <a href="?page=news&id=4n"> 
  <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
-  <h4 class="date">19 SEP</h4>
+ <div class="seeNew"> <h4>18 SEP</h4> <a href="?page=news&id=3n">DISCOVER MORE</a></div>
   <h3 class="title">LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR</h3>
 </div>
 <div class="new">
     <a href="?page=news&id=3n">
     <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
-    <h4 class="date">18 SEP</h4>
+    <div class="seeNew"> <h4>18 SEP</h4> <a href="?page=news&id=3n">DISCOVER MORE</a></div>
     <h3 class="title">COLDPLAY’S GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI</h3>
   </div>
 <div class="new">
       <a href="?page=news&id=2n">
       <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
-      <h4 class="date">17 SEP</h4>
+      <div class="seeNew"> <h4>18 SEP</h4> <a href="?page=news&id=2n">DISCOVER MORE</a></div>
       <h3 class="title">AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM</h3>
     </div>
 <div class="new">
         <a href="?page=news&id=1n">
         <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
-        <h4 class="date">16 SEP</h4>
+        <div class="seeNew"> <h4>18 SEP</h4> <a href="?page=news&id=1n">DISCOVER MORE</a></div>
         <h3 class="title">GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA</h3>
 </div>
 
