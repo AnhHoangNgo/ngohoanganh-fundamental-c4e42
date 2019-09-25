@@ -6,7 +6,6 @@ header.header{
     width: 100%;
     overflow: hidden;
     z-index: 1000;
-    transition: .3s all ease-in-out
 }
 
 header.header .container{
