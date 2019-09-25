@@ -1,0 +1,150 @@
+header.headerPage{
+    width:100%;
+    height:100%;
+    position: relative;;
+    left:0px;
+    top:0px;
+  }
+  
+  .slideShow{
+    height: 100%;
+    padding: 10px;
+    animation-name: show;
+    background-color: #282a2b;
+  }
+  
+  .slideShow img.imageShow{
+    width:100%;
+    height: 100%;
+    animation-name: showImage;
+    animation-duration: 1s
+  }
+  @keyframes showImage{
+    from{
+    opacity: 0
+    }
+    to{
+    opacity: 1
+    }
+  }
+  .dot-container{
+    position: absolute;
+    bottom:40px;
+    left:40px;
+    z-index:2;
+  }
+  .dot-container span{
+    display:inline-block;
+    width:50px;
+    height:2px;
+    background-color: #282a2b;
+    margin-right:5px;
+    border-radius: 10%;
+  }
+  span.dot.active{
+    background-color: rgb(184, 181, 12);
+  }
+  header.headerPage a {
+    position: absolute;
+    bottom:100px;
+    left:50%;
+    z-index:99;
+    
+  }
+  header.headerPage a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  }
+  header.headerPage a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  }
+  header.headerPage a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  @keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  main.mainPage{
+    width:100%;
+    height: 100%;
+  }
+  
+  @media only screen and (max-width:768px){
+    header.headerPage{
+    width:100%;
+    height:300px;
+    position: relative;;
+    left:0px;
+    top:0px;
+    }
+    .dot-container{
+      display:none;
+    }
+  }
+  header.headerPage h1.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font : normal 300 50px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+  }

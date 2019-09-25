@@ -32,25 +32,17 @@ header.header .container{
 .page-menu ul{
   display: flex;
 }
-
-.page-menu ul li{
-    margin-right: 10px;
-}
-
 .page-menu ul li:last-child{
     margin-right: 0;
 }
 
 .page-menu ul li a{
     position: relative;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 40px;
     display: block;
-    box-sizing: border-box;
     line-height: 40px;
     color: rgb(18, 121, 9);
-    font-size: 14px;
-    letter-spacing: 1px;
     font-weight: 400;
     text-align: center;
     transition: .3s all ease-in-out;
@@ -83,7 +75,6 @@ header.header .container{
         width: calc(100% - 30px);
     }
 }
-
 @media only screen and (max-width:768px){
     .hm-menu{
         position: relative;
@@ -95,7 +86,7 @@ header.header .container{
     
     .hm-menu span{
         height: 2px;
-        background-color: #fff;
+        background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
         position: absolute;
         right: 0;
         border-radius: 1px;
@@ -107,17 +98,17 @@ header.header .container{
     }
     
     .hm-menu span:nth-child(1){
-        width: 40%;
+        width: 50%;
         top: 8px;
     }
     
     .hm-menu span:nth-child(2){
-        width: 60%;
+        width: 70%;
         top: calc(50% - 1px);
     }
     
     .hm-menu span:nth-child(3){
-        width: 50%;
+        width: 60%;
         top: calc(100% - 10px);
     }
     

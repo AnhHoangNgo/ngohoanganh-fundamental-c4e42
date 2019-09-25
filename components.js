@@ -25,16 +25,23 @@ components.header =`
 </div>
 `
 components.home=`
-
-        
+<header class="headerPage">
+          <h1 class="title">LAMBORGHINI</h1>
+          <div class="slideShow">
+          <video style="width:100%" loop autoplay muted>
+          <source style="height:100%" src="Lamborghini Huracán EVO- Every Day Amplified.mp4" type="video/mp4">
+          </video>
+          </div>
+          <a href="#page-2"><span></span></a>
+     </header>
 `;
 components.model=`
 <header class="headerPage">
           <h1 class="title">LAMBORGHINI </br> MODEL</h1>
-          <div class="slideShow slideShow1"><img class="imageShow" src="lamborghini-forsennato-concept.jpg" alt=""></div>
-          <div class="slideShow slideShow1"><img class="imageShow" src="lamborghini-sian-roadster-rendering.jpg" alt=""></div>
-          <div class="slideShow slideShow2"><img class="imageShow" src="D1ZJbigX0AAkTL9.jpg" alt=""></div>
-          <div class="slideShow slideShow3"><img class="imageShow" src="lamborghini-aventador-svj-roadster-i.jpg" alt=""></div>
+          <div class="slideShow"><img class="imageShow" src="lamborghini-forsennato-concept.jpg" alt=""></div>
+          <div class="slideShow"><img class="imageShow" src="lamborghini-sian-roadster-rendering.jpg" alt=""></div>
+          <div class="slideShow"><img class="imageShow" src="D1ZJbigX0AAkTL9.jpg" alt=""></div>
+          <div class="slideShow"><img class="imageShow" src="lamborghini-aventador-svj-roadster-i.jpg" alt=""></div>
           <div class="dot-container">
              <span  class="dot"></span>
              <span  class="dot"></span>
@@ -138,14 +145,23 @@ components.new=`
 `
 components.album=`
 <header class="headerPage">
-<h1 class="title">LAMBORGHINI  </br> ALBUM</h1>
+<h1 class="title">LAMBORGHINI </br> ALBUM</h1>
 <div class="slideShow slideShow1"><img class="imageShow" src="aventador_mk2_render.jpg" alt=""></div>
+<div class="slideShow"><img class="imageShow" src="lamborghini-sian-roadster-rendering.jpg" alt=""></div>
+<div class="slideShow"><img class="imageShow" src="D1ZJbigX0AAkTL9.jpg" alt=""></div>
+<div class="slideShow"><img class="imageShow" src="lamborghini-aventador-svj-roadster-i.jpg" alt=""></div>
+<div class="dot-container">
+  <span  class="dot"></span>
+  <span  class="dot"></span>
+  <span  class="dot"></span>
+  <span  class="dot"></span>
+</div>
 <a href="#page-2"><span></span></a>
 </header>
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">Album</a></div>
 <div>
-<h1 style="font-size:80px">Masonry Gallery</h1>
+<h1 style="font-size:80px">Image garllery</h1>
 <div class="gallery" id="gallery">
 
 </div>

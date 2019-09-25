@@ -46,7 +46,6 @@ controller.loadAPI = function(url){
 	 })
 	 return queryObjects;
 	};
-
 	
 
  
