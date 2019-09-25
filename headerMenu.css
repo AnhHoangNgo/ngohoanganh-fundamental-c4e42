@@ -5,7 +5,6 @@ header.header{
     height: 80px;
     width: 100%;
     overflow: hidden;
-    transition: .5s all ease-in-out;
     z-index: 1000;
 }
 
