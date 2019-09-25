@@ -9,12 +9,10 @@ controller.loatScript('https://code.jquery.com/jquery-3.4.1.min.js')
     $('.hm-menu').click(function(){
         $('.hm-menu span').toggleClass('active');
         $('header.header').toggleClass('active');
-         $('header.header').removeClass('activex');
      });
       $('.page-menu a').click(function(){
           $('.hm-menu span').removeClass('active');
           $('header.header').removeClass('active');
-          $('header.header').addClass('activex');
       });
 });
 });
