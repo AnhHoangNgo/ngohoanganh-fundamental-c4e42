@@ -46,7 +46,7 @@ header.headerPage{
   }
   header.headerPage a {
     position: absolute;
-    bottom:100px;
+    bottom:90px;
     left:50%;
     z-index:99;
     
@@ -124,6 +124,21 @@ header.headerPage{
     height: 100%;
   }
   
+  
+  header.headerPage h1.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #07e212 0%, #1809df 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font : normal 300 60px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+  }
   @media only screen and (max-width:768px){
     header.headerPage{
     width:100%;
@@ -135,16 +150,15 @@ header.headerPage{
     .dot-container{
       display:none;
     }
+    header.headerPage h1.title{
+      font : normal 300 40px/1 'Josefin Sans', sans-serif;
+    }
   }
-  header.headerPage h1.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font : normal 300 50px/1 'Josefin Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap;
-    font-weight: bold;
+@media only screen and (max-width:500px){
+  header.headerPage h1.title{
+    font : normal 300 30px/1 'Josefin Sans', sans-serif;
   }
+  .header.headerPage a{
+    display:none;
+  }
+}
