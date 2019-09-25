@@ -44,8 +44,8 @@ components.model=`
           <a href="#page-2"><span></span></a>
      </header>
      <main class="mainPage">
-     <div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=model">Models</a></div>
-     <div class="firstMainPageModel">
+     <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=model">Models</a></div>
+     <div class="model">
      <img class="logo" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/gateway-models/urus/Urus-logo-2.png">
      <p>From our past, we've learned perfection. This is how the first model of the Lamborghini Huracán was born.
       More performance, more control, more innovation. The Huracán is equipped with a powerful V10 engine and the 
@@ -57,7 +57,7 @@ components.model=`
       <img style=" width:100%" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/gateway-models/urus/car-urus.png">
       </div>
      </div>
-     <div class="secondMainPageModel">
+     <div class="model">
      <img class="logo" src="https://www.lamborghini.com/sites/it-en/files/models_gateway/logo-huracan.png">
      <p>From our past, we've learned perfection. This is how the first model of the Lamborghini Huracán was born. 
      More performance, more control, more innovation. The Huracán is equipped with a powerful V10 engine and the 
@@ -69,7 +69,7 @@ components.model=`
         <img style=" width:100%" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/huracan/evo-slider/model/Huracan%20Spyder_scontorno.png">
         </div>
        </div>
-     <div class=thirdMainPageModel">
+     <div class="model">
      <img class="logo" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/gateway-family/aventador/logo-aventador.png">
      <p>The Aventador has been created to anticipate the future, as demonstrated by the use of innovative technology,
       including a V12 engine and the extensive use of carbon fiber.
@@ -105,29 +105,29 @@ components.history=`
 `;
 components.new=`
 <main class="mainPage">
-<div class="pageNow"> <a href="?page=home">Home</a> / <a href="?page=album">News</a></div>
+<div class="pageNow" id="newsPage"> <a href="?page=home">Home</a> / <a href="?page=album">News</a></div>
 <h1 style="font-size:80px">NEWS <br> LAMBORGHINI</h1>
 <div class="newsContainer">
   <div class="new">
- <a href="?titleNew=LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR"> 
+ <a href="?page=new&title=LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR"> 
  <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
   <h4 class="date">19 SEP</h4>
   <h3 class="title">LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR</h3>
 </div>
 <div class="new">
-    <a href="?titleNew=COLDPLAY’S GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI">
+    <a href="?page=new&title=COLDPLAYS GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI">
     <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
     <h4 class="date">18 SEP</h4>
     <h3 class="title">COLDPLAY’S GUY BERRYMAN TALKS ABOUT HIS PASSION FOR LAMBORGHINI</h3>
   </div>
 <div class="new">
-      <a href="?titleNew=AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM">
-      </a><img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
+      <a href="?page=new&title=AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM">
+      <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
       <h4 class="date">17 SEP</h4>
       <h3 class="title">AVENTADOR SVJ ROADSTER: THE ESSENCE OF AD PERSONAM</h3>
     </div>
 <div class="new">
-        <a href="?titleNew=GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA"></a>
+        <a href="?page=new&title=GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA">
         <img style = "width:100%" src="https://www.cstatic-images.com/car-pictures/xl/usc70lgc041b01300.png" alt=""></a>
         <h4 class="date">16 SEP</h4>
         <h3 class="title">GANDINI, DALLARA AND STANZANI TALK ABOUT LAMBORGHINI DESIGN DNA</h3>
@@ -152,14 +152,5 @@ components.album=`
 </div></main>
 `
 components.contact=`
-<section id="page-1" class="page header">
-          <h1>Contact</h1>
-          <a href="#page-2"><span></span></a>
-        </section>
-        <section id="page-2" class="page">
-        </section>
-        <section id="page-3" class="page">
-        </section>
-        <section id="page-4" class="page">
-        </section>
+
 `

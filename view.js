@@ -30,8 +30,8 @@ view.setActiveScreen = (screenName) => {
         break;
         case'new':
         document.getElementById('page-container').innerHTML = components.new;
-        document.getElementById('newPageTitile').addEventListener ('click',()=>{
-           controller.setNewPage();
+        document.querySelectorAll('new').forEach(element=>{
+            element.addEventListener('click',(e)=>{console.dir(e.target)})
         })
         break;
         case'album':

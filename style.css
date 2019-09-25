@@ -341,7 +341,7 @@ header.headerPage h1.title {
   }
 }
 /* style news Page*/
-.mainPage .pageNow{
+.mainPage .pageNow#newsPage{
   margin-top:100px;
 }
 .newsContainer{
@@ -349,6 +349,7 @@ header.headerPage h1.title {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border:1px solid red;
 }
 .newsContainer .new{
   width:45%;
@@ -356,6 +357,11 @@ header.headerPage h1.title {
   flex-direction: column;
   align-items: center;
   justify-content:start;
+  background-color: linear-gradient(to right, hsl(100,100,100),rgb(110, 98, 98));
+  border:1px solid red;
+}
+.newsContainer .new .title{
+  border: 1px solid red;
 }
 @media (max-width: 700px) {
   .newsContainer .new{

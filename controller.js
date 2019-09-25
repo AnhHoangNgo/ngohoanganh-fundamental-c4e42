@@ -37,7 +37,7 @@ controller.loadAPI = function(url){
  controller.setPage = function (){
 	 const queryObjects={};
 	 const queryStringPage = location.search;
-	 const query = queryStringPage.replace('?','').split('&')
+	 const query = queryStringPage.replace('?','').replace(/%20/gi,' ').split('&')
 	 console.log(query);
 	 query.forEach((element)=>{
 		 console.log(element);
@@ -46,12 +46,7 @@ controller.loadAPI = function(url){
 	 })
 	 return queryObjects;
 	};
-controller.setNewPage = function (){
-	const queryObjects = controller.setPage();
-	const titleNew = queryObjects.title.replace('-',' ');
-	console.log(titleNew);
-	return titleNew;
-}
+
 	
 
  
