@@ -27,11 +27,30 @@ view.setActiveScreen = (screenName) => {
         break;
 
         //Trang tin tức
-        case'new':
-        document.getElementById('page-container').innerHTML = components.new;
-        document.querySelectorAll('new').forEach(element=>{
-            element.addEventListener('click',(e)=>{console.dir(e.target)})
+        case'news':
+        document.getElementById('page-container').innerHTML = components.news;
+        var queryObjects =  controller.setPage();
+        if(queryObjects.page==="news"& queryObjects.id==="1n"){view.setActiveScreen('newPageShow')}
+        controller.loadAPI('./new.json').then((data)=>{
+            console.log(data);
+            data.forEach((elem)=>{
+                if(elem.id === queryObjects.id){
+                    console.log(elem.title);
+                    document.getElementById('page-container').innerHTML =`
+                    <header class="headerPage">
+                      <h1 class="title">LAMBORGHINI  </br> HISTORY</h1>
+                      <div class="slideShow slideShow1"><img class="imageShow" src="${elem.img.url}" alt=""></div>
+                      <a href="#page-2"><span></span></a>
+                      </header>
+                      <main class="mainPage">
+                      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}"></a></div>
+                      </main>
+
+                    `
+                }
+            })
         })
+        ;
         break;
         
         //Trang bộ sưu tập
@@ -91,6 +110,9 @@ view.setActiveScreen = (screenName) => {
         //Trang đăng kí nhận thông tin
         case'contact':
         document.getElementById('page-container').innerHTML = components.contact;
+        break;
+        case'newPageShow':
+        document.getElementById('page-container').innerHTML = components.newPageShow;
         break;
     }
 }

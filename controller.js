@@ -37,7 +37,7 @@ controller.loadAPI = function(url){
  controller.setPage = function (){
 	 const queryObjects={};
 	 const queryStringPage = location.search;
-	 const query = queryStringPage.replace('?','').replace(/%20/gi,' ').split('&')
+	 const query = queryStringPage.replace('?','').split('&')
 	 console.log(query);
 	 query.forEach((element)=>{
 		 console.log(element);
