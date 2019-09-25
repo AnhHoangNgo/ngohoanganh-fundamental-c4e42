@@ -164,7 +164,6 @@ components.album=`
 <div>
 <h1>Image garllery</h1>
 <div class="gallery" id="gallery">
-
 </div>
 </div></main>
 `;
