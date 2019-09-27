@@ -62,7 +62,7 @@ view.setActiveScreen = (screenName) => {
             console.log()
             var i = 9;
             for(let a=9; a < newlist.length; a++){
-                newlist[a].visibility= "unset";
+                newlist[a].style.display ="none";
             }
             const seeMoreButton = document.querySelector('#seeMoreButton');
             seeMoreButton.addEventListener("click",()=>{
@@ -73,7 +73,7 @@ view.setActiveScreen = (screenName) => {
                         seeMoreButton.style.display="none";
                         break;
                     }
-                    newlist[a].style.display="block";
+                    newlist[a].visibility= "unset";
                 }
             })
         })
