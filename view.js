@@ -83,7 +83,6 @@ view.setActiveScreen = (screenName) => {
             scrollTop.addEventListener('click',()=>{
                 window.scrollTo(0,0);
             });
-            view.scrollDown();
         })
         ;
         break;
