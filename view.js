@@ -47,10 +47,21 @@ view.setActiveScreen = (screenName) => {
                 `
                 var queryObjects =  controller.setPage();
                 if(elem.id === queryObjects.id){
-                    view.setActiveScreen('newPageShow');
-                
+                    view.setActiveScreen('newPageShow')
+                    console.log(elem.title);
+                    document.getElementById('page-container').innerHTML =`
+                    <header class="headerPage">
+                      <h1 style="width:80%; text-align:center; background-color:rgba(100,100,100,0.5)"class="title">${elem.title}</h1>
+                      <div class="slideShow slideShow1"><img class="imageShow" src="${elem.img.url}" alt=""></div>
+                      <a id="scrollDown"><span></span></a>
+                      </header>
+                      <main class="mainPage">
+                      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}">${elem.title}</a></div>
+                      </main>
+                    `
                 }
             });
+            
             const newlist = document.getElementsByClassName("new")
             var i = 9;
             for(let a=9; a < newlist.length; a++){
@@ -136,7 +147,8 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.contact;
         break;
         case'newPageShow':
-        document.getElementById('page-container').innerHTML = components.newPageShow();
+        document.getElementById('page-container').innerHTML = components.newPageShow;
+        view.scrollDown();
         break;
     }
 }
