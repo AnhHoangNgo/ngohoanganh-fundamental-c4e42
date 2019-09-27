@@ -67,7 +67,7 @@ view.setActiveScreen = (screenName) => {
             const seeMoreButton = document.querySelector('#seeMoreButton');
             console.log(seeMoreButton)
             seeMoreButton.addEventListener("click",()=>{
-                seeMoreButton.visibility= "hidden";;
+                seeMoreButton.visibility= "hidden";
                 i+=9;
                 for(let a=8;a <i; a++){
                     if(a>=newlist.length){
