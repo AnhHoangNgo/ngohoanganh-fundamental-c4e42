@@ -123,6 +123,9 @@ view.setActiveScreen = (screenName) => {
                     });
                 });
             })
+            const galleryItem = document.getElementsByClassName("gallery-item");
+            const seeMoreButton = document.querySelector('#seeMoreButton');
+            view.seeMore(galleryItem,seeMoreButton )
             view.scrollDown();
             view.scrollTop();
             break;
