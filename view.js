@@ -59,8 +59,9 @@ view.setActiveScreen = (screenName) => {
                 }
             });
             const newlist = document.getElementsByClassName("new");
+            console.log()
             var i = 9;
-            for(let a=9; a <= newlist.length; a++){
+            for(let a=8; a < newlist.length; a++){
                 newlist[a].style.display ="none";
             }
             const seeMoreButton = document.createElement('button');
@@ -69,7 +70,7 @@ view.setActiveScreen = (screenName) => {
             document.querySelector('.newsContainer').append(seeMoreButton);
             seeMoreButton.addEventListener("click",()=>{
                 i+=9;
-                for(let a=9;a <i; a++){
+                for(let a=8;a <i; a++){
                     newlist[a].style.display="block";
                 }
             })
