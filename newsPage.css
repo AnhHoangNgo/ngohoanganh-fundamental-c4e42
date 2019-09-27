@@ -17,10 +17,6 @@
   .newsContainer .new :nth-last-child(1){
     margin-right:0px;
   }
-  .newsContainer .new *{
-
-    border:1px solid red;
-  }
   .newsContainer .new h3.title{
     text-align: center;
   }
@@ -51,3 +47,4 @@
       width:100%
     }
   }
+  
