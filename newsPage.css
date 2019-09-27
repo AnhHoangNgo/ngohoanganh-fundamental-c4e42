@@ -19,7 +19,6 @@
     margin-right:0px;
   }
   .newsContainer .new *{
-    margin:10px;
     border:1px solid red;
   }
   .newsContainer .new h3.title{
