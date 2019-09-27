@@ -44,13 +44,13 @@ view.setActiveScreen = (screenName) => {
                  <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=${elem.id}">DISCOVER MORE</a></div>
                  <h3 class="title">${elem.title}</h3>
                  </div>
-                `});
+                `
                 var queryObjects =  controller.setPage();
                 if(elem.id === queryObjects.id){
                     view.setActiveScreen('newPageShow');
+                
                 }
-            
-            
+            });
             const newlist = document.getElementsByClassName("new")
             var i = 9;
             for(let a=9; a < newlist.length; a++){

@@ -150,10 +150,10 @@ components.contact=`
 `;
 components.newPageShow = function(){
     var queryObjects =  controller.setPage();
-    if(elem.id === queryObjects.id){
     fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
         console.log(data);
         data.forEach((elem)=>{
+            if(elem.id === queryObjects.id){
 return `
 <header class="headerPage">
   <h1 style="width:80%; text-align:center; background-color:rgba(100,100,100,0.5)"class="title">${elem.title}</h1>
@@ -164,7 +164,7 @@ return `
   <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}">${elem.title}</a></div>
   </main>
 `
-        })
+}})
     })
 }
-};
+;
