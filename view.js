@@ -61,7 +61,7 @@ view.setActiveScreen = (screenName) => {
             const newlist = document.getElementsByClassName("new");
             console.log()
             var i = 9;
-            for(let a=8; a < newlist.length; a++){
+            for(let a=9; a < newlist.length; a++){
                 newlist[a].style.display ="none";
             }
             const seeMoreButton = document.createElement('button');
