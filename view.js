@@ -38,7 +38,7 @@ view.setActiveScreen = (screenName) => {
                     console.log(elem.title);
                     document.getElementById('page-container').innerHTML =`
                     <header class="headerPage">
-                      <h1 style="width:60%; text-align:center"class="title">${elem.title}</h1>
+                      <h1 style="width:80%; text-align:center; background-color:rgba(100,100,100,0.5)"class="title">${elem.title}</h1>
                       <div class="slideShow slideShow1"><img class="imageShow" src="${elem.img.url}" alt=""></div>
                       <a href="#page-2"><span></span></a>
                       </header>
