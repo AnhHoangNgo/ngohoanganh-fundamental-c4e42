@@ -37,7 +37,7 @@ view.setActiveScreen = (screenName) => {
                     <div class="new">
                     <a href="?page=news&id=${elem.id}"> 
                     <img style = "width:100%" src="${elem.img.url}" alt=""></a>
-                    <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=3n">DISCOVER MORE</a></div>
+                    <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=${elem.id}">DISCOVER MORE</a></div>
                     <h4 class="title">${elem.title}</h4>
                     </div>
                     `
