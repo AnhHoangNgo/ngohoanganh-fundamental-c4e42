@@ -123,10 +123,10 @@ view.setActiveScreen = (screenName) => {
                     });
                 });
             })
-            const galleryItem = document.getElementsByClassName("gallery-item");
-            console.log(galleryItem);
+            const galleryItems = document.getElementsByClassName("gallery-item");
+            console.log(galleryItems);
             const seeMoreButton = document.querySelector('#seeMoreButton');
-            view.seeMore(galleryItem,seeMoreButton )
+            view.seeMore(galleryItems,seeMoreButton )
             view.scrollDown();
             view.scrollTop();
             break;
