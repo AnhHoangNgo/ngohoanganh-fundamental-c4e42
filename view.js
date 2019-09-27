@@ -64,17 +64,16 @@ view.setActiveScreen = (screenName) => {
             for(let a=9; a < newlist.length; a++){
                 newlist[a].style.display ="none";
             }
-            const seeMoreButton = document.querySelector('#seeMoreButton');
-            console.log(seeMoreButton)
+            const seeMoreButton = document.querySelector('#seeMoreButton')
             seeMoreButton.addEventListener("click",()=>{
-                seeMoreButton.visibility= "hidden";
+                seeMoreButton.style.visibility= "unset";
                 i+=9;
                 for(let a=8;a <i; a++){
                     if(a>=newlist.length){
-                        seeMoreButton.style.display="none";
+                        seeMoreButton.style.visibility= "hidden";
                         break;
                     }
-                    newlist[a].visibility= "unset";
+                    newlist[a].style.display="block";
                 }
             })
         })
