@@ -48,9 +48,12 @@
       width:100%
     }
   }
-  #seeMoreButton{
+  div.btn-container{
+    display:flex;
+    justify-content: space-between;
+  }
+  #seeMoreButton, #crollTop{
     border:none;
     background-color: white;
     color:blue;
-
   }

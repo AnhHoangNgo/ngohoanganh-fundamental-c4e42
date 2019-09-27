@@ -62,11 +62,11 @@ view.setActiveScreen = (screenName) => {
             console.log()
             var i = 9;
             for(let a=9; a < newlist.length; a++){
-                newlist[a].style.display ="none";
+                newlist[a].visibility= "unset";
             }
             seeMoreButton = document.querySelector('#seeMoreButton');
             seeMoreButton.addEventListener("click",()=>{
-                seeMoreButton.style.display="block";
+                seeMoreButton.visibility= "hidden";;
                 i+=9;
                 for(let a=8;a <i; a++){
                     if(a>=newlist.length){
