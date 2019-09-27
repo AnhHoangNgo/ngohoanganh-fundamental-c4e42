@@ -71,7 +71,7 @@ view.setActiveScreen = (screenName) => {
             seeMoreButton.addEventListener("click",()=>{
                 i+=9;
                 for(let a=8;a <i; a++){
-                    if(i>=newlist.length){
+                    if(a>=newlist.length){
                         break;
                     }
                     newlist[a].style.display="block";
