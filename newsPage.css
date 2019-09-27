@@ -52,13 +52,13 @@
     display:flex;
     justify-content: space-between;
   }
-  #seeMoreButton, #crollTop{
+  #seeMoreButton, #scrollTop{
    cursor: pointer;
     border:none;
     background-color: white;
     color:blue;
   }
-  #crollTop i{
+  #scrollTop i{
     font-size: 30px;
     color:blue;
   }
