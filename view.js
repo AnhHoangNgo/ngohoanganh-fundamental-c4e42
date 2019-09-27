@@ -55,8 +55,22 @@ view.setActiveScreen = (screenName) => {
                       <main class="mainPage">
                       <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}">${elem.title}</a></div>
                       </main>
-
                     `
+                }
+            });
+            const newlist = document.getElementsByClassName("new");
+            var i = 9;
+            for(let a=9; a <= newlist.length; a++){
+                newlist[a].style.display ="none";
+            }
+            const seeMoreButton = document.createElement('button');
+            seeMoreButton.id= "seeMoreButton";
+            seeMoreButton.innerHTML="See more";
+            document.querySelector('.newsContainer').append(seeMoreButton);
+            seeMoreButton.addEventListener("click",()=>{
+                i+=9;
+                for(let a=9;a <i; a++){
+                    newlist[a].style.display="block";
                 }
             })
         })
