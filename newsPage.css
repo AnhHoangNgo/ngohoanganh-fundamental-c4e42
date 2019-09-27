@@ -3,18 +3,20 @@
   }
   .newsContainer{
     width:100%;
+    display:flex;
+    flex-wrap: wrap;
+
   }
   .newsContainer .new{
     border-radius: 10%;
     overflow: hidden;
     width:32.333%;
-    float:left;
-    margin-right:10px;
     display: flex;
+    margin-right:1.5%;
     flex-direction: column;
     background-image: linear-gradient(rgb(235, 235, 243), rgb(255, 255, 255), rgb(90, 92, 90));
   }
-  .newsContainer .new :nth-last-child(1){
+  .newsContainer .new : :nth-last-child(1){
     margin-right:0px;
   }
   .newsContainer .new *{
