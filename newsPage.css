@@ -3,8 +3,7 @@
   }
   .newsContainer{
     width:100%;
-    display:flex;
-    flex-wrap: wrap;
+    float: left; 
     margin-left:10px;
   }
   .newsContainer .new{
