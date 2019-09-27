@@ -69,9 +69,11 @@ view.setActiveScreen = (screenName) => {
             seeMoreButton.innerHTML="See more";
             document.querySelector('.newsContainer').append(seeMoreButton);
             seeMoreButton.addEventListener("click",()=>{
+                seeMoreButton.style.display="block";
                 i+=9;
                 for(let a=8;a <i; a++){
                     if(a>=newlist.length){
+                        seeMoreButton.style.display="none";
                         break;
                     }
                     newlist[a].style.display="block";
