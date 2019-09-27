@@ -31,9 +31,7 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.news;
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             data.forEach((elem)=>{
-                if(elem.id === queryObjects.id){
-                    console.log(elem.title);
-                    const newsContainer = document.querySelector(".newsContainer");
+                const newsContainer = document.querySelector(".newsContainer");
                     newsContainer.innerHTML +=`
                     <div class="new">
                     <a href="?page=news&id=4n"> 
@@ -42,6 +40,8 @@ view.setActiveScreen = (screenName) => {
                     <h4 class="title">${elem.title}</h4>
                     </div>
                     `
+                    if(elem.id === queryObjects.id){
+                        console.log(elem.title);  
                     var queryObjects =  controller.setPage();
                     if(queryObjects.length > 1 & queryObjects.page === "news"){view.setActiveScreen('newPageShow')}
                     document.getElementById('page-container').innerHTML =`
