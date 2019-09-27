@@ -118,7 +118,7 @@ components.news=`
 <div class="newsContainer">
 </div>
 </div>
-<div class="btn-container"><button id="seeMoreButton">See more</button> <button id="crollTop"><i class="fas fa-arrow-up"></i></button></div>
+<div class="btn-container"><button id="seeMoreButton">See more</button> <button id="crollTop"><i class="fa fa-arrow-up"></i></button></div>
 </main>
 `
 components.album=`
