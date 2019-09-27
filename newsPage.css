@@ -53,6 +53,7 @@
     justify-content: space-between;
   }
   #seeMoreButton, #crollTop{
+   
     border:none;
     background-color: white;
     color:blue;
