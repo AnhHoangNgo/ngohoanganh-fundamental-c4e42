@@ -47,7 +47,6 @@ view.setActiveScreen = (screenName) => {
                 `
                 var queryObjects =  controller.setPage();
                 if(elem.id === queryObjects.id){
-                    view.setActiveScreen('newPageShow')
                     console.log(elem.title);
                     document.getElementById('page-container').innerHTML =`
                     <header class="headerPage">
@@ -80,17 +79,14 @@ view.setActiveScreen = (screenName) => {
                     newlist[a].style.display="block";
                 }
             });
-            const scrollTop = document.getElementById("scrollTop");
-            scrollTop.addEventListener('click',()=>{
-                window.scrollTo(0,0);
-            });
+            view.scrollTop();
+            
         })
         ;
         break;
         
         //Trang bộ sưu tập
         case'album':
-        view.scrollDown();
         document.getElementById('page-container').innerHTML = components.album;
         slideShowIndex=0;
         setInterval(()=>{view.slideShowImage()},2000);
@@ -141,6 +137,8 @@ view.setActiveScreen = (screenName) => {
                     });
                 });
             })
+            view.scrollDown();
+            view.scrollTop();
             break;
 
         //Trang đăng kí nhận thông tin
@@ -163,10 +161,15 @@ view.slideShowImage = function () {
         dots[slideShowIndex -1].classList.add('active');
     };
 view.scrollDown = function(){
-    console.log(document.getElementById('scrollDown'))
    const scrollDown =  document.getElementById('scrollDown');
    scrollDown.addEventListener('click',()=>{
        window.scrollBy(0,800);
    })
 
+}
+view.scrollTop = function(){
+    const scrollTop = document.getElementById("scrollTop");
+    scrollTop.addEventListener('click',()=>{
+        window.scrollTo(0,0);
+    });
 }
