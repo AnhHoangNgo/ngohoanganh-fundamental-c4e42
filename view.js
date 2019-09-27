@@ -29,12 +29,22 @@ view.setActiveScreen = (screenName) => {
         //Trang tin tức
         case'news':
         document.getElementById('page-container').innerHTML = components.news;
-        var queryObjects =  controller.setPage();
-        if(queryObjects.length > 1){view.setActiveScreen('newPageShow')}
+        
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             console.log(data);
             data.forEach((elem)=>{
+                const newsContainer = document.querySelector(".newsContainer");
+                newsContainer += `
+                <div class="new">
+                 a href="?page=news&id=${elem.id}"> 
+                 <img style = "width:100%" src="${elem.img.url} alt=""></a>
+                 <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=${elem.id}">DISCOVER MORE</a></div>
+                 <h3 class="title">LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR</h3>
+                 </div>
+                `
+                var queryObjects =  controller.setPage();
                 if(elem.id === queryObjects.id){
+                    view.setActiveScreen('newPageShow')
                     console.log(elem.title);
                     document.getElementById('page-container').innerHTML =`
                     <header class="headerPage">
