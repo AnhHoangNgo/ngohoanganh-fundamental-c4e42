@@ -54,7 +54,6 @@ view.setActiveScreen = (screenName) => {
                       <main class="mainPage">
                       <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}">${elem.title}</a></div>
                       </main>
-
                     `
                 }
             })
