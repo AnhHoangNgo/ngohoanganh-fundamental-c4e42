@@ -158,7 +158,7 @@ view.slideShowImage = function () {
         dots[slideShowIndex -1].classList.add('active');
     };
 view.scrollDown = function(){
-   const scrollDown =  document.getElementById('srcollDown');
+   const scrollDown =  document.getElementById('scrollDown');
    scrollDown.addEventListener('click',()=>{
        window.scrollBy(0,1000);
    })
