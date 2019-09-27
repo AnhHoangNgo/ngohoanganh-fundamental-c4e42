@@ -136,7 +136,7 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.contact;
         break;
         case'newPageShow':
-        document.getElementById('page-container').innerHTML = components.newPageShow;
+        document.getElementById('page-container').innerHTML = components.newPageShow();
         break;
     }
 }
