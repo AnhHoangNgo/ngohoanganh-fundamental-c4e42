@@ -135,6 +135,7 @@ header.headerPage{
     text-align: center;
     white-space: nowrap;
     font-weight: bold;
+    border:1px solid red;
   }
   @media only screen and (max-width:768px){
     header.headerPage{
