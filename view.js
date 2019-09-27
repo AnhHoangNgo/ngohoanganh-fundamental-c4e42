@@ -34,7 +34,7 @@ view.setActiveScreen = (screenName) => {
             console.log(data);
             data.forEach((elem)=>{
                 const newsContainer = document.querySelector(".newsContainer");
-                newsContainer += `
+                newsContainer.innerHTML += `
                 <div class="new">
                  a href="?page=news&id=${elem.id}"> 
                  <img style = "width:100%" src="${elem.img.url} alt=""></a>
