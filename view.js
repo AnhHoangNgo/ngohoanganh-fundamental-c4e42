@@ -33,7 +33,6 @@ view.setActiveScreen = (screenName) => {
         //Trang tin tức
         case'news':
         document.getElementById('page-container').innerHTML = components.news;
-        view.scrollDown();
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             console.log(data);
             data.forEach((elem)=>{
@@ -166,7 +165,7 @@ view.scrollDown = function(){
     console.log(document.getElementById('scrollDown'))
    const scrollDown =  document.getElementById('scrollDown');
    scrollDown.addEventListener('click',()=>{
-       window.scrollBy(0,500);
+       window.scrollBy(0,800);
    })
 
 }
