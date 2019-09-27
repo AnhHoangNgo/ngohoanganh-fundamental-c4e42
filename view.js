@@ -29,16 +29,24 @@ view.setActiveScreen = (screenName) => {
         //Trang tin tức
         case'news':
         document.getElementById('page-container').innerHTML = components.news;
-        var queryObjects =  controller.setPage();
-        if(queryObjects.length > 1){view.setActiveScreen('newPageShow')}
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
-            console.log(data);
             data.forEach((elem)=>{
                 if(elem.id === queryObjects.id){
                     console.log(elem.title);
+                    const newsContainer = document.querySelector(".newsContainer");
+                    newsContainer.innerHTML +=`
+                    <div class="new">
+                    <a href="?page=news&id=4n"> 
+                    <img style = "width:100%" src="${elem.img.url} alt=""></a>
+                    <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=3n">DISCOVER MORE</a></div>
+                    <h4 class="title">${elem.title}</h4>
+                    </div>
+                    `
+                    var queryObjects =  controller.setPage();
+                    if(queryObjects.length > 1 & queryObjects.page === "news"){view.setActiveScreen('newPageShow')}
                     document.getElementById('page-container').innerHTML =`
                     <header class="headerPage">
-                      <h1 class="title">LAMBORGHINI  </br> HISTORY</h1>
+                      <div class="titleNew"><h2>${elem.title}<h2><div>
                       <div class="slideShow slideShow1"><img class="imageShow" src="${elem.img.url}" alt=""></div>
                       <a href="#page-2"><span></span></a>
                       </header>
