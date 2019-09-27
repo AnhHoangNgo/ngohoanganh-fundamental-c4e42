@@ -117,7 +117,9 @@ components.news=`
 <h1>NEWS <br> LAMBORGHINI</h1>
 <div class="newsContainer">
 </div>
-</div></main>
+</div>
+<div class="btn-container"></div>
+</main>
 `
 components.album=`
 <header class="headerPage">

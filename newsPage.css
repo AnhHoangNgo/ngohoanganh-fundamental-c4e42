@@ -49,9 +49,6 @@
     }
   }
   #seeMoreButton{
-    position: absolute;
-    left:50%;
-    bottom:50px;
     border:none;
     background-color: white;
     color:blue;

@@ -67,7 +67,7 @@ view.setActiveScreen = (screenName) => {
             const seeMoreButton = document.createElement('button');
             seeMoreButton.id= "seeMoreButton";
             seeMoreButton.innerHTML="See more";
-            document.querySelector('.newsContainer').append(seeMoreButton);
+            document.querySelector('.btn-container').append(seeMoreButton);
             seeMoreButton.addEventListener("click",()=>{
                 seeMoreButton.style.display="block";
                 i+=9;
