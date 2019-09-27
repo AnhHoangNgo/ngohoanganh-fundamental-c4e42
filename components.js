@@ -134,7 +134,7 @@ components.album=`
   <span  class="dot"></span>
   <span  class="dot"></span>
 </div>
-<a id="srcollDown" ><span></span></a>
+<a id="scrollDown" ><span></span></a>
 </header>
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home" >Home</a> / <a href="?page=album">Album</a></div>
