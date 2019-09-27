@@ -45,6 +45,7 @@ header.headerPage{
     background-color: rgb(184, 181, 12);
   }
   header.headerPage a {
+    cursor: pointer;
     position: absolute;
     bottom:90px;
     left:50%;

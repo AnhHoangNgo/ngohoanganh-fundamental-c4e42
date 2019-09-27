@@ -14,7 +14,7 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.model;
         slideShowIndex = 0;
         setInterval(()=>{view.slideShowImage()},2000);
-        view.scrollDown();
+        
         break;
 
         //Trang thương hiệu
@@ -162,7 +162,8 @@ view.scrollDown = function(){
     console.log(document.getElementById('scrollDown'))
    const scrollDown =  document.getElementById('scrollDown');
    scrollDown.addEventListener('click',()=>{
-       window.scrollBy(0,1000);
+       window.scrollBy(0,500);
    })
 
 }
+view.scrollDown();
