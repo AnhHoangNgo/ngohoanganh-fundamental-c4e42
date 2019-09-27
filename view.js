@@ -39,7 +39,7 @@ view.setActiveScreen = (screenName) => {
                  a href="?page=news&id=${elem.id}"> 
                  <img style = "width:100%" src="${elem.img.url} alt=""></a>
                  <div class="seeNew"> <h4>${elem.date}</h4> <a href="?page=news&id=${elem.id}">DISCOVER MORE</a></div>
-                 <h3 class="title">LAMBORGHINI ASTERION: THE HYBRID CONCEPT CAR</h3>
+                 <h3 class="title">${elem.title}</h3>
                  </div>
                 `
                 var queryObjects =  controller.setPage();
