@@ -164,3 +164,4 @@ view.scrollDown = function(){
    })
 
 }
+view.scrollDown();
