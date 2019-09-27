@@ -75,6 +75,10 @@ view.setActiveScreen = (screenName) => {
                     }
                     newlist[a].style.display="block";
                 }
+            });
+            const scrollTop = document.getElementById("scrollTop");
+            scrollTop.addEventListener('click',()=>{
+                window.scrollTo(0,0);
             })
         })
         ;
@@ -152,4 +156,4 @@ view.slideShowImage = function () {
     };
         slideShows[slideShowIndex-1].style.display="block";
         dots[slideShowIndex -1].classList.add('active');
-    }
+    };
