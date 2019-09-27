@@ -3,12 +3,13 @@
   }
   .newsContainer{
     width:100%;
+    display:flex;
+    flex-wrap: wrap;
   }
   .newsContainer .new{
     border-radius: 10%;
     overflow: hidden;
     width:32.333%;
-    float:left;
     display: flex;
     margin-right:1%;
     flex-direction: column;
