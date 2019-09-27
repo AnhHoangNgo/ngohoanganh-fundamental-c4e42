@@ -7,6 +7,7 @@ view.setActiveScreen = (screenName) => {
         // Trang chủ
         case'home':
         document.getElementById('page-container').innerHTML = components.home;
+        view.scrollDown();
         break;
 
         //Trang nói về mô hình
@@ -14,23 +15,25 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.model;
         slideShowIndex = 0;
         setInterval(()=>{view.slideShowImage()},2000);
-        
+        view.scrollDown();
         break;
 
         //Trang thương hiệu
         case'brand':
         document.getElementById('page-container').innerHTML = components.brand;
+        view.scrollDown();
         break;
 
         //Trang lịch sử
         case'history':
         document.getElementById('page-container').innerHTML = components.history;
+        view.scrollDown();
         break;
 
         //Trang tin tức
         case'news':
         document.getElementById('page-container').innerHTML = components.news;
-        
+        view.scrollDown();
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             console.log(data);
             data.forEach((elem)=>{
@@ -51,7 +54,7 @@ view.setActiveScreen = (screenName) => {
                     <header class="headerPage">
                       <h1 style="width:80%; text-align:center; background-color:rgba(100,100,100,0.5)"class="title">${elem.title}</h1>
                       <div class="slideShow slideShow1"><img class="imageShow" src="${elem.img.url}" alt=""></div>
-                      <a href="#page-2"><span></span></a>
+                      <a><span></span></a>
                       </header>
                       <main class="mainPage">
                       <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=news">News</a> / <a href="?page=news&id=${elem.id}">${elem.title}</a></div>
@@ -59,8 +62,8 @@ view.setActiveScreen = (screenName) => {
                     `
                 }
             });
-            const newlist = document.getElementsByClassName("new");
-            console.log()
+            
+            const newlist = document.getElementsByClassName("new")
             var i = 9;
             for(let a=9; a < newlist.length; a++){
                 newlist[a].style.display ="none";
@@ -80,7 +83,8 @@ view.setActiveScreen = (screenName) => {
             const scrollTop = document.getElementById("scrollTop");
             scrollTop.addEventListener('click',()=>{
                 window.scrollTo(0,0);
-            })
+            });
+            view.scrollDown();
         })
         ;
         break;
@@ -166,4 +170,3 @@ view.scrollDown = function(){
    })
 
 }
-view.scrollDown();
