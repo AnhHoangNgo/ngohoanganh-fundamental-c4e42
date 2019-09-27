@@ -90,6 +90,7 @@ view.setActiveScreen = (screenName) => {
         
         //Trang bộ sưu tập
         case'album':
+        view.scrollDown();
         document.getElementById('page-container').innerHTML = components.album;
         slideShowIndex=0;
         setInterval(()=>{view.slideShowImage()},2000);
