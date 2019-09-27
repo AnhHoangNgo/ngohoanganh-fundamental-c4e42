@@ -32,7 +32,7 @@ components.home=`
           <source style="height:100%" src="Lamborghini Huracán EVO- Every Day Amplified.mp4" type="video/mp4">
           </video>
           </div>
-          <a id="scrollDown ><span></span></a>
+          <a id="scrollDown" ><span></span></a>
      </header>
 `;
 components.model=`
