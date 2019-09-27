@@ -32,7 +32,7 @@ components.home=`
           <source style="height:100%" src="Lamborghini Huracán EVO- Every Day Amplified.mp4" type="video/mp4">
           </video>
           </div>
-          <a id="srcollDown" href="#"><span></span></a>
+          <a id="srcollDown" ><span></span></a>
      </header>
 `;
 components.model=`
@@ -48,7 +48,7 @@ components.model=`
              <span  class="dot"></span>
              <span  class="dot"></span>
           </div>
-          <a id="srcollDown" href="#"><span></span></a>
+          <a id="srcollDown" ><span></span></a>
      </header>
      <main class="mainPage">
      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=model">Models</a></div>
@@ -95,7 +95,7 @@ components.brand=`
 <header class="headerPage">
 <h1 class="title">LAMBORGHINI  </br> BRAND</h1>
 <div class="slideShow slideShow1"><img class="imageShow" src="lamborghini-aventador-blue-1.jpg" alt=""></div>
-<a id="srcollDown" href="#"><span></span></a>
+<a id="srcollDown" ><span></span></a>
 </header>
 <main class="mainPage">
      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=brand">Brand</a></div>
@@ -105,7 +105,7 @@ components.history=`
 <header class="headerPage">
 <h1 class="title">LAMBORGHINI  </br> HISTORY</h1>
 <div class="slideShow slideShow1"><img class="imageShow" src="lamborghini-aventador-blue-1.jpg" alt=""></div>
-<a id="srcollDown" href="#"><span></span></a>
+<a id="srcollDown" ><span></span></a>
 </header>
 <main class="mainPage">
      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=history">History</a></div>
@@ -134,7 +134,7 @@ components.album=`
   <span  class="dot"></span>
   <span  class="dot"></span>
 </div>
-<a id="srcollDown" href="#"><span></span></a>
+<a id="srcollDown" ><span></span></a>
 </header>
 <main class="mainPage">
 <div class="pageNow"> <a href="?page=home" >Home</a> / <a href="?page=album">Album</a></div>
