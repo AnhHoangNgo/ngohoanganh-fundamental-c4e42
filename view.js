@@ -32,6 +32,7 @@ view.setActiveScreen = (screenName) => {
         fetch('./new.json').then(res=>{return res.json()}).then((data)=>{
             data.forEach((elem)=>{
                 const newsContainer = document.querySelector(".newsContainer");
+                console.log(elem.id)
                     newsContainer.innerHTML +=`
                     <div class="new">
                     <a href="?page=news&id=${elem.id}"> 
