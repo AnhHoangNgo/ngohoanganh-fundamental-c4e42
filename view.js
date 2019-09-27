@@ -157,3 +157,10 @@ view.slideShowImage = function () {
         slideShows[slideShowIndex-1].style.display="block";
         dots[slideShowIndex -1].classList.add('active');
     };
+view.scrollDown = function(){
+   const scrollDown =  document.getElementById('srcollDown');
+   scrollDown.addEventListener('click',()=>{
+       window.scrollBy(0,1000);
+   })
+
+}
