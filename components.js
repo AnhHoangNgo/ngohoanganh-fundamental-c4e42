@@ -142,6 +142,7 @@ components.album=`
 <h1>Image garllery</h1>
 <div class="gallery" id="gallery">
 </div>
+<div class="btn-container"><button id="seeMoreButton">See more</button> <button id="scrollTop"><i class="fa fa-arrow-up"></i></button></div>
 </div></main>
 `;
 components.contact=`
