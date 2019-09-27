@@ -62,23 +62,28 @@ view.setActiveScreen = (screenName) => {
                 }
             });
             
-            const newlist = document.getElementsByClassName("new")
-            var i = 9;
-            for(let a=9; a < newlist.length; a++){
-                newlist[a].style.display ="none";
-            }
-            const seeMoreButton = document.querySelector('#seeMoreButton')
-            seeMoreButton.addEventListener("click",()=>{
-                seeMoreButton.style.visibility= "unset";
-                i+=9;
-                for(let a=8;a <i; a++){
-                    if(a>=newlist.length){
-                        seeMoreButton.style.visibility= "hidden";
-                        break;
-                    }
-                    newlist[a].style.display="block";
+            const newlist = document.getElementsByClassName("new");
+            const seeMoreButton = document.querySelector('#seeMoreButton');
+            seeMore(newlist,seeMoreButton);
+            function seeMore(domObjectList=[], seeMoreButton){
+                var i = 9;
+                for(let a=9; a < domObjectList.length; a++){
+                    domObjectList[a].style.display ="none";
                 }
-            });
+               
+                seeMoreButton.addEventListener("click",()=>{
+                    seeMoreButton.style.visibility= "unset";
+                    i+=9;
+                    for(let a=8;a <i; a++){
+                        if(a>=domObjectList.length){
+                            seeMoreButton.style.visibility= "hidden";
+                            break;
+                        }
+                        domObjectList[a].style.display="block";
+                    }
+                });
+            }
+            
             view.scrollTop();
             
         })
