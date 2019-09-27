@@ -40,10 +40,10 @@ view.setActiveScreen = (screenName) => {
                     <h4 class="title">${elem.title}</h4>
                     </div>
                     `
-                    if(elem.id === queryObjects.id){
-                        console.log(elem.title);  
                     var queryObjects =  controller.setPage();
                     if(queryObjects.length > 1 & queryObjects.page === "news"){view.setActiveScreen('newPageShow')}
+                    if(elem.id === queryObjects.id){
+                        console.log(elem.title);  
                     document.getElementById('page-container').innerHTML =`
                     <header class="headerPage">
                       <div class="titleNew"><h2>${elem.title}<h2><div>
