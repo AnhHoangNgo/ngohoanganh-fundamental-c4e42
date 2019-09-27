@@ -49,7 +49,7 @@
     }
   }
   #seeMoreButton{
-    align-self: center;
+    display:block;
     border:none;
     background-color: white;
     color:blue;
