@@ -40,7 +40,7 @@ components.home=`
           </ul>
           <div class="homePage" id="p1">
           <header class="headerPage">
-          <h1 class="titlePageHome">ALL IN lAMBORGHINI CAR WORLD</h1>
+          <h1 class="titlePageHome">ALL IN LAMBORGHINI CAR WORLD</h1>
           <div class="slideShow">
           <video style="width:100%; height:100%" loop autoplay muted>
           <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
