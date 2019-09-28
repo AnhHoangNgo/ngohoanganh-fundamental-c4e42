@@ -69,8 +69,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 1;
-    top: 0;
-    bottom: 0;
+    top: 100px;
     left: 0;
     margin: auto;
     height: 100px;
