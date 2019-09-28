@@ -1,173 +1,63 @@
-
-.generic-anchor {
-	color: #8DB9ED;
-	
-}
-.flex-rw {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-footer {
-  background: rgb(55,55,55);
-  margin-top: auto;
-  width: 100%
-}
-.footer-list-top {
-  width: 33.333%
-}
-.footer-list-top > li {
-  text-align: center;
-  padding-bottom: 10px
-}
-.footer-list-header {
-  padding: 10px 0 5px 0;
-  color: #fff;
-  font: 2.3vw "Oswald", sans-serif
-}
-.footer-list-anchor {
-  font: 1.3em "Open Sans", sans-serif
-}
-.footer-social-section {
-  width: 100%;
+.footer{
+  width:100%;
+  margin:0px;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  position: relative;
-  margin-top: 5px;
+  font-size: 14px;
+  overflow: hidden;
+  background: linear-gradient( to right, white,rgb(136, 255, 0), white)
 }
-.footer-social-section::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 10px;
-  border-top: 1px solid black;
-  width: calc(100% - 20px)
+.leftFooter{
+  float:left;
 }
-.footer-social-overlap {
-  position: relative;
-  z-index: 2;
-  background: rgb(55,55,55);
-  padding: 0 20px
-}
-.footer-social-connect {
-  display: flex;
+.leftFooter .menuBar ul, .menuConect ul{
+  display:flex;
+  justify-content: center;
   align-items: center;
-  font: 3.5em "Oswald", sans-serif;
-  color: #fff
 }
-.footer-social-small {
-  font-size: 0.6em;
-  padding: 0px 20px
+.leftFooter .menuBar ul li, .menuConect ul li {
+  margin-right:20px;
 }
-.footer-social-overlap > a {
-  font-size: 3em
+li:nth-last-child(1){
+  margin-right:0px;
 }
-.footer-social-overlap > a:not(:first-child) {
-  margin-left: 0.38em
+
+.rightFooter{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footer-bottom-section {
-  width: 100%;
-  padding: 10px;
-  border-top: 1px solid black;
-  margin-top: 10px
+.rightFooter input{
+  width:200px;
+  height: 30px;
 }
-.footer-bottom-section > div:first-child {
-  margin-right: auto
+li i.fa{
+  font-size: 40px;
 }
-.footer-bottom-wrapper {
-  font-size: 1.5em;
-  color: #fff
+.inputEmail{
+  display:flex;
 }
-.footer-address {
-  display: inline;
-  font-style: normal
+.inputEmail .btn{
+  cursor: pointer;
+  border: 1px solid rgb(124, 119, 119);
+  background-color: aliceblue;
 }
-@media only screen and (max-width: 768px) {
-  .footer-list-header {
-    font-size: 2em
-  }
-  .footer-list-anchor {
-    font-size: 1.1em
-  }
-  .footer-social-connect {
-    font-size: 2.5em
-  }
-  .footer-social-overlap > a {
-    font-size: 2.24em
-  }
-  .footer-bottom-wrapper {
-    font-size: 1.3em
-  }
+.logoFooter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-@media only screen and (max-width: 568px) {
-  main {
-    font-size: 5em
+@media only screen and (max-width:768px){
+  .logoFooter, .rightFooter, .leftFooter{
+    width:100%;
   }
-  .footer-list-top {
-    width: 100%
+  .leftFooter .menuBar ul{
+    display:flex;
+    flex-wrap: wrap;
   }
-  .footer-list-header {
-    font-size: 3em;
-  }
-  .footer-list-anchor {
-    font-size: 1.5em
-  }
-  .footer-social-section {
-    justify-content: center
-  }
-  .footer-social-section::after {
-    top: 25%
-  }
-  .footer-social-connect {
-    margin-bottom: 10px;
-    padding: 0 10px
-  }
-  .footer-social-overlap {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-social-icons-wrapper {
-    width: 100%;
-    padding: 0
-  }
-  .footer-social-overlap > a:not(:first-child) {
-    margin-left: 20px;
-  }
-  .footer-bottom-section {
-    padding: 0 5px 10px 5px
-  }
-  .footer-bottom-wrapper {
-    text-align: center;
-    width: 100%;
-    margin-top: 10px
-  }
-}
-@media only screen and (max-width: 480px) {
-  .footer-social-overlap > a {
-    margin: auto
-  }
-  .footer-social-overlap > a:not(:first-child) {
-    margin-left: 0;
-  }
-  .footer-bottom-rights {
-    display: block
-  }
-}
-@media only screen and (max-width: 320px) {
-  .footer-list-header {
-    font-size: 2.2em
-  }
-  .footer-list-anchor {
-    font-size: 1.2em
-  }
-  .footer-social-connect {
-    font-size: 2.4em
-  }
-  .footer-social-overlap > a {
-    font-size: 2.24em
-  }
-  .footer-bottom-wrapper {
-    font-size: 1.3em
-  }
+  
 }

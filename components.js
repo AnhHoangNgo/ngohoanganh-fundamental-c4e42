@@ -83,7 +83,6 @@ components.home=`
           </header>
           </div> 
           <div class="homePage" id="p5">
-           
           </div> 
         </div>
       </div>
@@ -150,7 +149,40 @@ components.model=`
        <img style=" width:100%" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/aventador/aventador-svj-roadster/car/SVJ_Roadster_gateway%20modelli.png">
        </div>
      </div>
+     <footer class="footer">
+        <div class="logoFooter"><a href="?page=home"><img style="width:150px" src="lamborghini-aventador-sports-car-luxury-vehicle-lamborghini.jpg" alt="logo"></a></div>
+        <div class="leftFooter">
+        <div class="menuBar">
+          <ul>
+            <li><a href="?page=home">Home</a></li>
+            <li><a href="?page=model">model</a></li>
+            <li><a href="?page=brand">Brand</a></li>
+            <li><a href="?page=history">History</a></li>
+            <li><a href="?page=news">News</a></li>
+            <li><a href="?page=album">Album</a></li>
+            <li><a href="?page=contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menuConect">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightFooter">
+        <h3>Here from us</h3>
+        <div class="inputEmail">
+        <input type="email" placeholder="Email">
+        <button class="btn">Subserice</button>
+      </div>
+      </div>
+      </footer>
      </main>
+     
 `;
 components.brand=`
 <header class="headerPage">
@@ -160,6 +192,7 @@ components.brand=`
 </header>
 <main class="mainPage">
      <div class="pageNow" > <a href="?page=home">Home</a> / <a href="?page=brand">Brand</a></div>
+
 </main>
 `;
 components.history=`
@@ -180,6 +213,38 @@ components.news=`
 </div>
 </div>
 <div class="btn-container"><button id="seeMoreButton">See more</button> <button id="scrollTop"><i class="fa fa-arrow-up"></i></button></div>
+<footer class="footer">
+        <div class="logoFooter"><a href="?page=home"><img style="width:150px" src="lamborghini-aventador-sports-car-luxury-vehicle-lamborghini.jpg" alt="logo"></a></div>
+        <div class="leftFooter">
+        <div class="menuBar">
+          <ul>
+            <li><a href="?page=home">Home</a></li>
+            <li><a href="?page=model">model</a></li>
+            <li><a href="?page=brand">Brand</a></li>
+            <li><a href="?page=history">History</a></li>
+            <li><a href="?page=news">News</a></li>
+            <li><a href="?page=album">Album</a></li>
+            <li><a href="?page=contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menuConect">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightFooter">
+        <h3>Here from us</h3>
+        <div class="inputEmail">
+        <input type="email" placeholder="Email">
+        <button class="btn">Subserice</button>
+      </div>
+      </div>
+      </footer>
 </main>
 `
 components.album=`
@@ -204,7 +269,39 @@ components.album=`
 <div class="gallery" id="gallery">
 </div>
 <div class="btn-container"><button id="seeMoreButton">See more</button> <button id="scrollTop"><i class="fa fa-arrow-up"></i></button></div>
-</div></main>
+</div>
+<footer class="footer">
+        <div class="logoFooter"><a href="?page=home"><img style="width:150px" src="lamborghini-aventador-sports-car-luxury-vehicle-lamborghini.jpg" alt="logo"></a></div>
+        <div class="leftFooter">
+        <div class="menuBar">
+          <ul>
+            <li><a href="?page=home">Home</a></li>
+            <li><a href="?page=model">model</a></li>
+            <li><a href="?page=brand">Brand</a></li>
+            <li><a href="?page=history">History</a></li>
+            <li><a href="?page=news">News</a></li>
+            <li><a href="?page=album">Album</a></li>
+            <li><a href="?page=contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menuConect">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightFooter">
+        <h3>Here from us</h3>
+        <div class="inputEmail">
+        <input type="email" placeholder="Email">
+        <button class="btn">Subserice</button>
+      </div>
+      </div>
+      </footer></main>
 `;
 components.contact=`
 `;
