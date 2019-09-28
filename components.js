@@ -26,14 +26,52 @@ components.header =`
 `
 components.home=`
 <header class="headerPage">
-          <h1 class="title">LAMBORGHINI</h1>
+          <h1 class="title">LAMBORGHINI CAR WORLD</h1>
           <div class="slideShow">
-          <video style="width:100%" loop autoplay muted>
-          <source style="height:100%" src="Lamborghini Huracán EVO- Every Day Amplified.mp4" type="video/mp4">
+          <video style="width:100%; height:100%" loop autoplay muted>
+          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
           </video>
           </div>
           <a id="scrollDown" ><span></span></a>
-     </header>
+</header>
+<main class="mainPage mainHomePage">
+<div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+          <ul id="menu">
+            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+          </ul>
+          <div class="homePage" id="p1">
+
+          </div>
+          <div class="homePage" id="p2">
+            
+          </div>  
+          <div class="homePage" id="p3">
+            
+          </div>
+          <div class="homePage" id="p4">
+            
+          </div> 
+          <div class="homePage" id="p5">
+           
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+     
 `;
 components.model=`
 <header class="headerPage">
@@ -146,8 +184,6 @@ components.album=`
 </div></main>
 `;
 components.contact=`
-
-
 `;
 components.newPageShow =`
 `
