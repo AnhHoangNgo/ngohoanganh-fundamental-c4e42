@@ -25,15 +25,6 @@ components.header =`
 </div>
 `
 components.home=`
-<header class="headerPage">
-          <h1 class="title">LAMBORGHINI CAR WORLD</h1>
-          <div class="slideShow">
-          <video style="width:100%; height:100%" loop autoplay muted>
-          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
-          </video>
-          </div>
-          <a id="scrollDown" ><span></span></a>
-</header>
 <main class="mainPage mainHomePage">
 <div class="ct" id="t1">
   <div class="ct" id="t2">
@@ -48,16 +39,48 @@ components.home=`
             <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
           </ul>
           <div class="homePage" id="p1">
-
+          <header class="headerPage">
+          <h1 class="titlePageHome">ALL IN lAMBORGHINI CAR WORLD</h1>
+          <div class="slideShow">
+          <video style="width:100%; height:100%" loop autoplay muted>
+          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
+          </video>
+          </div>
+          <a style ="display:none" id="scrollDown" ><span></span></a>
+          </header>
           </div>
           <div class="homePage" id="p2">
-            
+          <header class="headerPage">
+          <h1 class="titlePageHome">MOST MODERN</h1>
+          <div class="slideShow">
+          <video style="width:100%; height:100%" loop autoplay muted>
+          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
+          </video>
+          </div>
+          <a style ="display:none" id="scrollDown" ><span></span></a>
+          </header>
           </div>  
           <div class="homePage" id="p3">
-            
+          <header class="headerPage">
+          <h1 class="titlePageHome">PERFECT AND BEAUTIFUL</h1>
+          <div class="slideShow">
+          <video style="width:100%; height:100%" loop autoplay muted>
+          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
+          </video>
+          </div>
+          <a style ="display:none" id="scrollDown" ><span></span></a>
+          </header>
           </div>
           <div class="homePage" id="p4">
-            
+          <header class="headerPage">
+          <h1 class="titlePageHome">FASTEST</h1>
+          <div class="slideShow">
+          <video style="width:100%; height:100%" loop autoplay muted>
+          <source src="LAMBORGHINI AVENTADOR LP 700-4. A RELENTLESS FORCE.mp4" type="video/mp4">
+          </video>
+          </div>
+          <a style ="display:none" id="scrollDown" ><span></span></a>
+          </header>
           </div> 
           <div class="homePage" id="p5">
            

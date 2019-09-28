@@ -69,7 +69,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 1;
-    top: 100px;
+    top: 150px;
     left: 0;
     margin: auto;
     height: 100px;
@@ -87,4 +87,16 @@
   .mainPage.mainHomePage{
       margin-top:0px !important;
       background-color: #282a2b;
+  }
+  .titlePageHome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #a0e207 0%, #df4d09 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font : normal 300 60px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
   }
