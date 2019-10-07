@@ -29,7 +29,6 @@ view.setActiveScreen = (screenName) => {
         document.getElementById('page-container').innerHTML = components.history;
         view.scrollDown();
         break;
-
         //Trang tin tức
         case'news':
         document.getElementById('page-container').innerHTML = components.news;
@@ -136,6 +135,21 @@ view.setActiveScreen = (screenName) => {
         //Trang đăng kí nhận thông tin
         case'contact':
         document.getElementById('page-container').innerHTML = components.contact;
+        const contactForm = document.getElementById('contactForm');
+        console.log(contactForm);
+        const buttonContactForm = document.getElementById('buttonSubmit');
+        console.log(buttonContactForm);
+        buttonContactForm.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            const messageInfo = {};
+            messageInfo.name = contactForm.name;
+            messageInfo.email = contactForm.email;
+            messageInfo.message = contactForm.message;
+            if(!messageInfo.name){
+                document.getElementById('error-name').innerHTML +=`
+                Please enter your name!`
+            }
+        })
         break;
         case'newPageShow':
         document.getElementById('page-container').innerHTML = components.newPageShow;
