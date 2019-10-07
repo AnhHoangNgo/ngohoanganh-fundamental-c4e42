@@ -304,6 +304,30 @@ components.album=`
       </footer></main>
 `;
 components.contact=`
+<main class="contactPage">
+<div class="contactPage-container">
+      <h1>CONTACT US</h1>
+      <form  id="contactForm" method="POST">
+      <div class="input-wrapper nameInput">
+        <label for="name">Name*</label>
+        <input  name ="name" id ="name" type="text">
+        <div class="error" id="error-name"></div>
+      </div>
+      <div class="input-wrapper addressInput">
+        <label for="email">Email*</label>
+          <input name="email" id ="email" type="email">
+          <div class="error" id="error-email"></div>
+        </div>
+    <div class=" input-wrapper messageInput">
+      <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div class="error error-message"></div>
+    </div>
+    <div class="btn-container"><button id="buttonSubmit" class="btn">Send message</button></div>
+    </form>
+  </div>
+</main>
+
 `;
 components.newPageShow =`
 `
